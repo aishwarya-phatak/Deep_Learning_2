@@ -41,6 +41,8 @@ plt.title(f"label : {first_label}")
 plt.axis('off')
 plt.show()
 
+predictions = model.predict(X_test)
+print(predictions)
 
-
-
+print("predictions : ",np.argmax(predictions[0]))
+print("actual values : ",(y_test[0]))
